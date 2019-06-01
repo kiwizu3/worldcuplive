@@ -1,0 +1,7 @@
+Flask
+gunicorn
+httplib2
+requests
+beautifulsoup4
+datetime
+json

@@ -82,48 +82,94 @@ body{
   <div class="text-center">
            <form class="form-download" method="POST" action="/details">
 
+             {% if not multiple_match %}
+
              <div class="card z-4 alingment" center>
-               <div class="header">
+               <h3 class="header txt-c" >{{ match_number_1 }}</h3>
+               <div class="header txt-c">
                  <label>English</label>
                  <span>Select quality:</span>
                </div>
                <div class="content buttons-center">
-                <button input type="submit" name="submit_button" value="540p:English" class="btn c-color">540P</button>
-                 <button input type="submit" name="submit_button" value="720p:English" class="btn c-color">720P</button>
-                 <button input type="submit" name="submit_button" value="1080p:English" class="btn c-color">1080P</button>
+                <button input type="submit" name="submit_button" value="540p:English:01" class="btn c-color">540P</button>
+                 <button input type="submit" name="submit_button" value="720p:English:01" class="btn c-color">720P</button>
+                 <button input type="submit" name="submit_button" value="1080p:English:01" class="btn c-color">1080P</button>
                </div>
-             </div>
-              <br><br>
-
-             <div class="card z-4 alingment" center>
-               <div class="header">
+               <div class="header txt-c">
                  <label>Hindi</label>
                  <span>Select quality:</span>
                </div>
                <div class="content buttons-center">
-                <button input type="submit" name="submit_button" value="540p:Hindi" class="btn c-color">540P</button>
-                 <button input type="submit" name="submit_button" value="720p:Hindi" class="btn c-color">720P</button>
-                 <button input type="submit" name="submit_button" value="1080p:Hindi" class="btn c-color">1080P</button>
+                <button input type="submit" name="submit_button" value="540p:Hindi:01" class="btn c-color">540P</button>
+                 <button input type="submit" name="submit_button" value="720p:Hindi:01" class="btn c-color">720P</button>
+                 <button input type="submit" name="submit_button" value="1080p:Hindi:01" class="btn c-color">1080P</button>
                </div>
              </div>
+              <br>
 
+              {% else %}
+
+              <div class="card z-4 alingment" center>
+                <h3 class="header txt-c" >{{ match_number_1 }}</h3>
+                <div class="header txt-c">
+                  <label>English</label>
+                  <span>Select quality:</span>
+                </div>
+                <div class="content buttons-center">
+                 <button input type="submit" name="submit_button" value="540p:English:01" class="btn c-color">540P</button>
+                  <button input type="submit" name="submit_button" value="720p:English:01" class="btn c-color">720P</button>
+                  <button input type="submit" name="submit_button" value="1080p:English:01" class="btn c-color">1080P</button>
+                </div>
+                <div class="header txt-c">
+                  <label>Hindi</label>
+                  <span>Select quality:</span>
+                </div>
+                <div class="content buttons-center">
+                 <button input type="submit" name="submit_button" value="540p:Hindi:01" class="btn c-color">540P</button>
+                  <button input type="submit" name="submit_button" value="720p:Hindi:01" class="btn c-color">720P</button>
+                  <button input type="submit" name="submit_button" value="1080p:Hindi:01" class="btn c-color">1080P</button>
+                </div>
+              </div>
+               <br>
+               <div class="card z-4 alingment" center>
+                 <h3 class="header txt-c" >{{ match_number_2 }}</h3>
+                 <div class="header txt-c">
+                   <label>English</label>
+                   <span>Select quality:</span>
+                 </div>
+                 <div class="content buttons-center">
+                  <button input type="submit" name="submit_button" value="540p:English:02" class="btn c-color">540P</button>
+                   <button input type="submit" name="submit_button" value="720p:English:02" class="btn c-color">720P</button>
+                   <button input type="submit" name="submit_button" value="1080p:English:02" class="btn c-color">1080P</button>
+                 </div>
+                 <div class="header txt-c">
+                   <label>Hindi</label>
+                   <span>Select quality:</span>
+                 </div>
+                 <div class="content buttons-center">
+                  <button input type="submit" name="submit_button" value="540p:Hindi:02" class="btn c-color">540P</button>
+                   <button input type="submit" name="submit_button" value="720p:Hindi:02" class="btn c-color">720P</button>
+                   <button input type="submit" name="submit_button" value="1080p:Hindi:02" class="btn c-color">1080P</button>
+                 </div>
+               </div>
+                <br>
+
+                  {% endif %}
            </form>
-           <br><br>
-	  
+
 	  <div class="card z-4 alingment" center>
-             <div class="header">
+             <div class="header txt-c">
                <label>Visitors</label>
              </div>
               <div class="content buttons-center">
             <img src="https://smallseotools.com/counterDisplay?code=2f915ebc42425e0ccf39502c0d80094c&style=0013&pad=5&type=page&initCount=107"  title="Visitor Hit Counter" Alt="Visitor Hit Counter" border="0">
           </div>
-          <br><br>
-	  
+
     </div>
 
 
     <footer class="page-footer txt-c">
-    	<p class="p-txt">Made with 💖 by <a href="https://cyberboysumanjay.github.io">Sumanjay</a> &amp; <a href="https://twitter.com/HarshV23">HarshV23</a></p> 
+    	<p class="p-txt">Made with 💖 by <a href="https://github.com/cyberboysumanjay">Sumanjay</a> &amp; <a href="https://twitter.com/HarshV23">HarshV23</a></p>
     </footer>
     <br><br>
 
