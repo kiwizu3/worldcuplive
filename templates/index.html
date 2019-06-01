@@ -1,52 +1,122 @@
+
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <title>World Cup Streamer</title>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   </head>
-   <body>
-      <div class="text-center">
-         <h1 class="display-4">World Cup Live Streamer</h1>
-         <p>Made with 💖 by <a href="https://cyberboysumanjay.github.io">Sumanjay</a>
-      </div>
-      <div class="text-center">
-        <img src="https://tinyimg.io/i/tpcXoXK.png" alt="worldcup" height="240" width="200">
-         <br>
-         <br><br><br>
-      </div>
-      <div class="text-center">
-         <form class="form-download" method="POST" action="/details">
-         <div class="text-center">
-            <div class="btn-group" role="group" >
-               <button input type="submit" name="submit_button" value="540p:Hindi" class="btn btn-outline-dark btn-lg mr-5">Hindi (540P)</button>
-               <button input type="submit" name="submit_button" value="540p:English" class="btn btn-outline-dark btn-lg mr-5">English (540P)</button>
-            </div>
-         </div>
-         <div>
-            <br>
-         </div>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#5f7280" />
+  <meta name="description" content="WC19 live stream">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/matericious@0.8.0/dist/css/matericious.min.css">
+  <title>World Cup 2019</title>
+<style>
+body{
+   margin: 0;
+   height: auto;
+   width: auto;
+  font-family: 'Montserrat', sans-serif;
+}
 
-         <div class="text-center">
-            <div class="btn-group" role="group" >
-               <button input type="submit" name="submit_button" value="720p:Hindi" class="btn btn-outline-dark btn-lg mr-5">Hindi (720P)</button>
-               <button input type="submit" name="submit_button" value="720p:English" class="btn btn-outline-dark btn-lg mr-5">English (720P)</button>
-            </div>
-         </div>
-         <div>
-            <br>
-         </div>
+}
+.center{
+  align: center;
+  margin: auto;
+}
+.logo{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.card {
+	border-radius: 8px;
+}
+.txt-c{
+  text-align: center;
+}
+.p-color{
+  background-color: #5f7280;
+}
+.p-txt{
+  color: #5f7280;
+}
+.c-color{
+  background-color: #ff0043;
+}
+.white-txt{
+  color: #ffffff;
+    font-size: 22px;
+}
+.alingment {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn {
+	width: 70px;
+  border-radius: 10px;
+}
+.buttons-center{
+  text-align: center;
+  margin-top: -5px;
+  margin-bottom: 15px;
+}
+</style>
+</head>
 
-         <div class="text-center">
-            <div class="btn-group" role="group">
-               <button input type="submit" name="submit_button" value="1080p:Hindi" class="btn btn-outline-dark btn-lg mr-5">Hindi (1080P)</button>
-               <button input type="submit" name="submit_button" value="1080p:English" class="btn btn-outline-dark btn-lg mr-5">English (1080P)</button>
-            </div>
-         </div>
-      </div>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-   </body>
+<body>
+
+  <header class="appbar fixed z-0 p-color">
+     <div class="wrap txt-c">
+         <label class="title txt-c white-txt">WC Live Stream</label>
+     </div>
+  </header>
+
+  <div>
+    <img src="https://tinyimg.io/i/tpcXoXK.png" class="logo" alt="worldcup" height="240" width="200">
+    <br><br>
+  </div>
+
+  <div class="text-center">
+           <form class="form-download" method="POST" action="/details">
+
+             <div class="card z-4 alingment" center>
+               <div class="header">
+                 <label>English</label>
+                 <span>Select quality:</span>
+               </div>
+               <div class="content buttons-center">
+                <button input type="submit" name="submit_button" value="540p:English" class="btn c-color">540P</button>
+                 <button input type="submit" name="submit_button" value="720p:English" class="btn c-color">720P</button>
+                 <button input type="submit" name="submit_button" value="1080p:English" class="btn c-color">1080P</button>
+               </div>
+             </div>
+              <br><br>
+
+             <div class="card z-4 alingment" center>
+               <div class="header">
+                 <label>Hindi</label>
+                 <span>Select quality:</span>
+               </div>
+               <div class="content buttons-center">
+                <button input type="submit" name="submit_button" value="540p:Hindi" class="btn c-color">540P</button>
+                 <button input type="submit" name="submit_button" value="720p:Hindi" class="btn c-color">720P</button>
+                 <button input type="submit" name="submit_button" value="1080p:Hindi" class="btn c-color">1080P</button>
+               </div>
+             </div>
+
+           </form>
+           <br><br>
+    </div>
+
+
+    <footer class="page-footer txt-c">
+    			<p class="p-txt">Website made by Sumanjay</p>
+  	</footer>
+    <br><br>
+
+</body>
+
 </html>
